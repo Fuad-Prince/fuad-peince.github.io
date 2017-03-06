@@ -1,0 +1,61 @@
+@font-face {
+    font-family: DroidNaskh;
+    src: url(../fonts/DroidArabicNaskh/DroidNaskh-Regular.ttf);
+}
+
+@font-face {
+    font-family: NotoKufiArabic;
+    src: url(../fonts/NotoKufiArabic-hinted/NotoKufiArabic-Regular.ttf);
+}
+
+html{
+	direction: rtl;
+}
+
+html {
+  font-family: DroidNaskh;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .title {
+    font-family: NotoKufiArabic;
+}
+
+
+input, button, select, textarea {
+	font-family: NotoKufiArabic;
+}
+
+body {
+font-family: DroidNaskh,"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p {
+    margin: 0 0 5px;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.panelTop {
+    padding: 10px 30px;
+}
+
+.form-control {
+    height: 40px;
+}
+
+.navbar-header {
+    float: right;
+}
+
+td{
+	margin: auto 5px;
+}
+
+th{
+	text-align: right;
+}
