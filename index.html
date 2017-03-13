@@ -404,8 +404,8 @@
 						<center>
 						<div>
 							<div class="btn-group">
-								<!--input  id="reset" type="reset" class="btn btn-warning btn-lg btn-filter" data-target="pagado" value="إعادة تعيين" /-->
 								<button id="print" type="button" class="btn btn-info btn-lg btn-filter" data-target="pendiente">طباعة</button>
+								<button id="reset" type="reset" class="btn btn-warning btn-lg btn-filter" data-target="pendiente">استمارة جديدة</button>
 								<button id="result" type="button" class="btn btn-primary btn-lg btn-filter" data-target="pendiente">النتيجة</button>
 							</div>
 						</div>
@@ -456,13 +456,14 @@
 	    $("#res"+thisNum).html("0");
     });
 	
-	//$('#reset').click(function() {
-	//  $('#theResult').attr('style','display:none;');
-	//  $('#theResult').attr('class','panel panel-success');
-	//  $('#resultMsg').html('');
-	//  
-	//  $('.toggle-two').prop('checked',false);
-	//});
+	$('#reset').click(function() {
+	  $('#theResult').attr('style','display:none;');
+	  $('#theResult').attr('class','panel panel-success');
+	  $('#resultMsg').html('');
+	  
+	  $('.toggle-two').bootstrapToggle('off')
+	});
+	
 	$('#print').click(function() {
 	window.print();
 	});
